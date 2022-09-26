@@ -251,6 +251,8 @@ module QRHTMLLayout
       format("%s<br>\n%s %s<br>\n%s %s<br>\n", address[:name], address[:line1], address[:line2], address[:postal_code], address[:town])
     when 'K'
       format("%s<br>\n%s<br>\n%s<br>\n", address[:name], address[:line1], address[:line2])
+    else
+      ''
     end
   end
 end
